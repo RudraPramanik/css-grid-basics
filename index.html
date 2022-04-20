@@ -1,119 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>docs</title>
     <style>
-        .container{
-            height: 100vh;
-            display: grid;
-            grid-template-columns: repeat(12,1fr);
-            grid-gap: 5px;
-            grid-template-rows: 100px auto 100px;
-            grid-template-areas:  "m m h h h h h h h h h h"
-                                  "m m c c c c c c c c c c"
-                                  "m m f f f f f f f f f f";
-        }
-        .header{
-            grid-area: h;
-        }
-        .content{
-            grid-area: c;
-        }
-        .footer{
-            grid-area: f;
-        }
-        .menu{
-            grid-area: m;
-        }
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 5px;
+        grid-template-rows: 100px auto 100px;
+        grid-template-areas:
+          'm m h h h h h h h h h h'
+          'm m c c c c c c c c c c'
+          'm m f f f f f f f f f f';
+      }
+      .header {
+        grid-area: h;
+      }
+      .content {
+        grid-area: c;
+      }
+      .footer {
+        grid-area: f;
+      }
+      .menu {
+        grid-area: m;
+      }
 
-        .header,.menu,.content,.footer{
-            background-color: aqua;
-        }
+      .header,
+      .menu,
+      .content,
+      .footer {
+        background-color: aqua;
+      }
 
-        .container2{
-            display: grid;
-            height: 100%;
-            grid-gap: 5px;
-            grid-template-columns: repeat(auto-fit, minmax( 200px, 1fr));
-            grid-template-rows: repeat( 1fr);
-            grid-auto-rows: 200px;
-        }
-        .div{
-            background-color: rgb(82, 143, 122);
-        }
+      .container2 {
+        display: grid;
+        height: 100%;
+        grid-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: repeat(1fr);
+        grid-auto-rows: 200px;
+      }
+      .div {
+        background-color: rgb(82, 143, 122);
+      }
 
-        .image{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            grid-gap: 5px;
-            grid-auto-flow: dense;
-        }
-        .image img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
+      .image {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 5px;
+        grid-auto-flow: dense;
+      }
+      .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
 
-        .horizontal{
-            grid-column: auto / span 2;
-        }
-        .varticle{
-           grid-row: auto / span 2;
-        }
-        .big{
-           grid-column: auto/ span 2;
-           grid-row: auto / span 2 ;
-        }
-        
+      .horizontal {
+        grid-column: auto / span 2;
+      }
+      .varticle {
+        grid-row: auto / span 2;
+      }
+      .big {
+        grid-column: auto/ span 2;
+        grid-row: auto / span 2;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header"> header</div>
-        <div class="menu"> menu</div>
-        <div class="content"> content</div>
-        <div class="footer"> footer</div>
+      <div class="header">header</div>
+      <div class="menu">menu</div>
+      <div class="content">content</div>
+      <div class="footer">footer</div>
     </div>
 
     <div class="image">
-        <div><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div class="horizontal"><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div class="varticle"><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div class="big"><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div class="varticle"><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div class="big"><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div class="horizontal"><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-        <div><img src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg" alt=""></div>
-
+      <div>
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div class="horizontal">
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div class="varticle">
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div class="big">
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div class="varticle">
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div class="big">
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div class="horizontal">
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://img.etimg.com/thumb/msid-75572296,imgsize-507941/bmw-ninet.jpg"
+          alt=""
+        />
+      </div>
     </div>
 
     <div class="container2">
-        <div class="div">1</div>
-        <div class="div">2</div>
-        <div class="div">3</div>
-        <div class="div">4</div>
-        <div class="div">5</div>
-        <div class="div">6</div>
-        <div class="div">7</div>
-        <div class="div">8</div>
-        <div class="div">9</div>
-        <div class="div">10</div>
-        <div class="div">10</div>
-        <div class="div">10</div>
-        <div class="div">10</div>
-        <div class="div">10</div>
-        <div class="div">10</div>
-        <div class="div">10</div>
-
+      <div class="div">1</div>
+      <div class="div">2</div>
+      <div class="div">3</div>
+      <div class="div">4</div>
+      <div class="div">5</div>
+      <div class="div">6</div>
+      <div class="div">7</div>
+      <div class="div">8</div>
+      <div class="div">9</div>
+      <div class="div">10</div>
+      <div class="div">10</div>
+      <div class="div">10</div>
+      <div class="div">10</div>
+      <div class="div">10</div>
+      <div class="div">10</div>
+      <div class="div">10</div>
     </div>
-</body>
+  </body>
 </html>
